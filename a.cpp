@@ -1,6 +1,8 @@
 #include <bits/extc++.h>
 
 signed main() {
-    std::cout << "Love u!\n";
+    int a, b;
+    std::cin >> a >> b;
+    std::cout << a + b << '\n';
     return 0;
 }
