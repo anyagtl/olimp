@@ -1,7 +1,7 @@
 #include <bits/extc++.h>
 
 #define Int long long
-#define FAST_ALLOCATOR_MEMORY 2e8
+//#define FAST_ALLOCATOR_MEMORY 2e8
 #define fast_io
 
 #ifdef FAST_ALLOCATOR_MEMORY
@@ -206,10 +206,10 @@ inline T _abs(T x) {
 
 signed main() {
     int n;
-    std::cin >> n;
+    n = readInt();
     std::vector<std::pair<int, int>> v(n);
     for (int i = 0; i < n; i++) {
-        std::cin >> v[i].first;
+        v[i].first = readInt();
         v[i].second = i;
     }
 
@@ -238,7 +238,8 @@ signed main() {
         sgl.eq_upd(v[i].second, v[i].second + 1, node(0), 0, n, 0);
     }
 
-    std::cout << ans << '\n';
+    writeInt(ans);
+    writeChar('\n');
     return 0;
 }
 
