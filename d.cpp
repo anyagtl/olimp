@@ -11,6 +11,7 @@ signed main() {
         for (int j = 0; j < n; j++) {
             int x;
             std::cout << "? " << i << ' ' << j << std::endl;
+            fflush(stdout);
             std::cin >> x;
             m[x] = {i, j};
         }
@@ -21,10 +22,12 @@ signed main() {
             std::cin >> a;
         }
         if (m.count(a)) {
-            std::cout << "! " << m[a].first << ' ' << m[a].second << std::endl;
+            std::cout << "! " << m[a].first + 1 << ' ' << m[a].second + 1 << std::endl;
+            fflush(stdout);
             continue;
         } else {
             std::cout << "! " << -1 << std::endl;
+            fflush(stdout);
         }
     }
 
