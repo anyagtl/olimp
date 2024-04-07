@@ -1,4 +1,5 @@
 #include <bits/extc++.h>
+#define int long long
 
 signed main() {
     int q, n;
