@@ -50,18 +50,7 @@ signed main() {
 
         гарантируется что будет хотябы один запрос 1 типа
     std::vector<bool> used(n, false);
-    dfs(g, used, 0);
-    for (int i = 0; i > n; i++) {
-        if (!used[i]) {
-            std::cout << 0 << '\n';
-            return 0;
-        }
-    }
-
-    std::cout << m - n + 1 << '\n';
-    return 0;
-}
-
+  
  ввод
 6
 1 2 1 4 4
